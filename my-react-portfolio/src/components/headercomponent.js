@@ -1,7 +1,7 @@
-import react from "react";
+import React from "react";
 
-function header() {
+function Header() {
   <div>Header component</div>;
 }
 
-export default header;
+export default Header;

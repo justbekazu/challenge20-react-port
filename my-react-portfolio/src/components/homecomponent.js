@@ -1,12 +1,13 @@
-import react from "react";
-import { link } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 
-function homeComponent() {
-  return;
-  <div>
-    <div>home component</div>
-    <link to="/about">How About</link>
-  </div>;
+function HomeComponent() {
+  return (
+    <div>
+      <div>home component</div>
+      <Link to="/about">How About...</Link>
+    </div>
+  );
 }
 
-export default homeComponent;
+export default HomeComponent;

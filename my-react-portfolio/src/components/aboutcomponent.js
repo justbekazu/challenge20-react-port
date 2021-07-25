@@ -1,11 +1,13 @@
-import react from "react";
-import { link } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function aboutComponent() {
-  return;
-  <div>
-    <div>about component</div>;<link to="/home">go home</link>
-  </div>;
+  return (
+    <div>
+      <div>about component</div>
+      <Link to="/home">go home</Link>
+    </div>
+  );
 }
 
 export default aboutComponent;

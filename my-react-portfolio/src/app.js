@@ -1,9 +1,9 @@
 import React from "react";
-import "./index";
-import "./app.css";
-import "./components/maincomponents";
+// import "./index";
+import "./App.css";
+import Main from "./components/maincomponents";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import homeComponent from "./components/homecomponent";
+import HomeComponent from "./components/homecomponent";
 import homePage from "./pages/home";
 import aboutPage from "./pages/about";
 import aboutComponent from "./components/aboutcomponent";

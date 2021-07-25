@@ -1,24 +1,24 @@
-import React from "React";
-import header from "./headercomponent";
-import footer from "./footercomponent";
-import home from "./homecomponent";
+import React from "react";
+import Header from "./headercomponent";
+import Footer from "./footercomponent";
+import Home from "./homecomponent";
 import about from "./aboutcomponent";
 import work from "./workcomponent";
-import { swtch, route, redirect, withRouter } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 function Main() {
   return (
     <div>
-      <header>
+      <Header>
         <div>The portfolio REACT made</div>
-        <swtch>
-          <route path="/home" component={home} />
-          <route path="/about" component={about} />
-          <route path="/work" component={work} />
-          <redirect to="/home" />
-        </swtch>
-      </header>
-      ,<footer></footer>
+        <Switch>
+          <Route path="/home" component={Home} />
+          <Route path="/about" component={about} />
+          <Route path="/work" component={work} />
+          <Redirect to="/home" />
+        </Switch>
+      </Header>
+      <Footer></Footer>
     </div>
   );
 }

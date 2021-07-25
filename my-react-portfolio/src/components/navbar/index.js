@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import {
   nav,
   navlink,
@@ -17,9 +17,9 @@ function navbar() {
       </navlink>
       <bars></bars>
       <NavMenu>
-        <navlink to="/about">ABOUT</navlink>
-        <navlink to="/home">HOME</navlink>
-        <navlink to="/work">WORK</navlink>
+        <navlink to="./pages/about">ABOUT</navlink>
+        <navlink to="./pages/home">HOME</navlink>
+        <navlink to="./page/work">WORK</navlink>
       </NavMenu>
       <NavBtn>
         <NavBtnLink to="/home">THE BEGINNING</NavBtnLink>
