@@ -1,6 +1,6 @@
 import React from "react";
 
-const aboutPage = () => {
+const homePage = () => {
   return (
     <div
       style={{
@@ -15,4 +15,4 @@ const aboutPage = () => {
   );
 };
 
-export default aboutPage;
+export default homePage;

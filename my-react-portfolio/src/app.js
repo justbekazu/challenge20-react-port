@@ -3,23 +3,25 @@ import "./index";
 import "./app.css";
 import "./components/maincomponents";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import home from "./components/homecomponent";
-import home from "./pages ";
-import about from "./pages/about";
-import about from "./components/aboutcomponent";
-import work from "./pages/work";
+import homeComponent from "./components/homecomponent";
+import homePage from "./pages/home";
+import aboutPage from "./pages/about";
+import aboutComponent from "./components/aboutcomponent";
+import workPage from "./pages/work";
 
-function portfolio() {
+<div>Testing</div>;
+
+function app() {
   return (
     <Router className="Portfolio">
       <navbar></navbar>
       <switch>
-        <Route path="/" exact component={home} />
-        <Route path="/about" component={about} />
-        <Route path="/work" component={work} />
+        <Route path="/" exact component={homePage} />
+        <Route path="/about" component={aboutPage} />
+        <Route path="/work" component={workPage} />
       </switch>
     </Router>
   );
 }
 
-export default portfolio;
+export default app;
